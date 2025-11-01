@@ -1,17 +1,17 @@
-'use client'
 
-import {
-  useUser
-} from '@clerk/nextjs'
+import { auth, currentUser } from '@clerk/nextjs/server'
+import Search from './components/search';
 
-export default function Home() {
 
-  const { user } = useUser();
+export default async function Home() {
+
+  const { isAuthenticated } = await auth()
+  const user = await currentUser()
+
 
   return (
-    <div>
-      <h1>{user ? "Hello,  " + user.firstName + "!" : "Please sign-in"}</h1>
-    
-    </div>
+    // TODO: Prevent searching unless the user us signed in
+    // TODO: Replace hard-coded username with actual signed-in user's name
+    <Search username={"James"}/>
   );
 }
