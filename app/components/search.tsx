@@ -33,7 +33,7 @@ export default function Search(props: {username: string}) {
           <input type="number" placeholder="Start Year" onChange={(e) => setDateRange({...dateRange, start: parseInt(e.target.value)})} />
           <input type="number" placeholder="End Year" onChange={(e) => setDateRange({...dateRange, end: parseInt(e.target.value)})} />
         </div>
-        <button type="submit" className='bg-teal-50 hover:bg-teal-400 text-black hover:text-white py-2 px-4 rounded mt-4' onClick={fetchArticles}>Search</button>
+        <button type="submit" className='cursor-pointer bg-teal-50 hover:bg-violet-500 text-black hover:text-white py-2 px-4 rounded mt-4' onClick={fetchArticles}>Search</button>
       </div>
       
       <div className='flex flex-col sm:flex-row flex-wrap justify-center items-center gap-4 mr-[10%] ml-[10%] md:mr-[25%] md:ml-[25%] mt-4'>

@@ -4,7 +4,7 @@ This is a demo app allowing users to search the Library of Congress for newspape
 
 ## Before you start
 
-1. Sign up for a Clerk account and make a starter app for this project
+1. Sign up for a Clerk account and make a starter app for this project: [https://clerk.com/](https://clerk.com/)
 2. Select any OAuth providers you want, and include email/password as an option as well
 3. With Next.js selected as the client library, copy the secret keys Clerk provides
 4. Create a file called `.env` in the root of the project directory and paste those keys into the file
@@ -14,6 +14,7 @@ This is a demo app allowing users to search the Library of Congress for newspape
 First, run the development server:
 
 ```bash
+npm install
 npm run dev
 ```
 
